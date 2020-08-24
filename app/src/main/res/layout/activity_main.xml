@@ -170,48 +170,44 @@
         android:layout_height="30dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/home_on_off"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/menubar"
-        app:srcCompat="@drawable/home" />
+        app:layout_constraintTop_toTopOf="@+id/menubar" />
 
     <ImageButton
         android:id="@+id/search"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/search_on_off"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/add"
         app:layout_constraintStart_toEndOf="@+id/home"
-        app:layout_constraintTop_toTopOf="@+id/menubar"
-        app:srcCompat="@drawable/search" />
+        app:layout_constraintTop_toTopOf="@+id/menubar" />
 
     <ImageButton
         android:id="@+id/add"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/add_on_off"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/menubar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/menubar"
-        app:srcCompat="@drawable/add" />
+        app:layout_constraintTop_toTopOf="@+id/menubar" />
 
     <ImageButton
         android:id="@+id/notice"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/notice_on_off"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/paper"
         app:layout_constraintStart_toEndOf="@+id/add"
-        app:layout_constraintTop_toTopOf="@+id/menubar"
-        app:srcCompat="@drawable/heart" />
+        app:layout_constraintTop_toTopOf="@+id/menubar" />
 
     <ImageButton
         android:id="@+id/paper"
@@ -219,12 +215,12 @@
         android:layout_height="30dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:background="@android:color/transparent"
+        android:background="@drawable/paper_on_off"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/menubar"
-        app:layout_constraintTop_toTopOf="@+id/menubar"
-        app:srcCompat="@drawable/paper" />
+        app:layout_constraintTop_toTopOf="@+id/menubar" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
