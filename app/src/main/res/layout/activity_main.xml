@@ -4,143 +4,221 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#99A7B3"
+    android:background="#FFFFFF"
     tools:context=".MainActivity.MainActivity">
 
-    <TextView
-        android:id="@+id/best_look_user2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginLeft="10dp"
-        android:text="@string/best_look_user2"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/best_look02"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/best_look_user1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginRight="10dp"
-        android:text="@string/best_look_user1"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shadow2" />
-
-    <TextView
-        android:id="@+id/shadow1"
-        android:layout_width="190dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="225dp"
-        android:background="#000000"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_toolbar" />
-
-    <TextView
-        android:id="@+id/shadow2"
-        android:layout_width="190dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginRight="5dp"
-        android:background="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/best_look01"
-        app:layout_constraintTop_toBottomOf="@+id/main_toolbar" />
-
-    <ImageView
-        android:id="@+id/best_look01"
-        android:layout_width="190dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="50dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
-        app:srcCompat="@color/colorGray" />
-
-    <ImageView
-        android:id="@+id/sticker2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginLeft="120dp"
-        android:layout_marginBottom="116dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/sticker2" />
-
-    <ImageView
-        android:id="@+id/best_look02"
-        android:layout_width="190dp"
-        android:layout_height="300dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="220dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
-        app:srcCompat="@color/colorGray" />
-
-    <ImageView
-        android:id="@+id/sticker1"
-        android:layout_width="402dp"
-        android:layout_height="184dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="70dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_toolbar"
-        app:srcCompat="@drawable/sticker" />
-
-    <ImageView
-        android:id="@+id/sticker3"
-        android:layout_width="119dp"
-        android:layout_height="179dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/best_look01"
-        app:srcCompat="@drawable/sticker3" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/main_toolbar"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:background="#000000"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/main_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="faditor"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
         <ImageButton
-            android:id="@+id/profile_button"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
             android:background="@android:color/transparent"
             android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/setting" />
+
+        <ImageButton
+            android:id="@+id/profile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/profile" />
 
-        <ImageButton
-            android:id="@+id/setting_button"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:background="@android:color/transparent"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/setting"
-            tools:layout_editor_absoluteX="40dp"
-            tools:layout_editor_absoluteY="15dp" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="faditor"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/setting"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/best_look_user2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/best_look_user2"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/best_look02"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/best_look_user1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/best_look_user1"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shadow2" />
+
+        <TextView
+            android:id="@+id/shadow1"
+            android:layout_width="190dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="280dp"
+            android:background="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/shadow2"
+            android:layout_width="190dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#000000"
+            app:layout_constraintEnd_toEndOf="@+id/best_look01"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/best_look01"
+            android:layout_width="190dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="105dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@color/colorGray" />
+
+        <ImageView
+            android:id="@+id/sticker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginBottom="116dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/sticker2" />
+
+        <ImageView
+            android:id="@+id/best_look02"
+            android:layout_width="190dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="275dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@color/colorGray" />
+
+        <ImageView
+            android:id="@+id/sticker1"
+            android:layout_width="402dp"
+            android:layout_height="184dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginRight="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sticker" />
+
+        <ImageView
+            android:id="@+id/sticker3"
+            android:layout_width="119dp"
+            android:layout_height="179dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/best_look01"
+            app:srcCompat="@drawable/sticker3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/home_on_off"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/search_on_off"
+            android:clickable="false"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/add"
+            app:layout_constraintStart_toEndOf="@+id/home"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/add_on_off"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/notice"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/notice_on_off"
+            android:clickable="false"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/paper"
+            app:layout_constraintStart_toEndOf="@+id/add"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/paper"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/paper_on_off"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
