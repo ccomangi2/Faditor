@@ -17,18 +17,9 @@ import com.faditor.master.R;
 
 public class NoticeActivity extends Fragment {
     View view;
-    ImageButton back;   //뒤로가기
+
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.activity_notice, container, false);
-
-        back = (ImageButton)view.findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), MainActivity.class);
-                startActivity(intent);
-            }
-        });
         return view;
     }
 }
