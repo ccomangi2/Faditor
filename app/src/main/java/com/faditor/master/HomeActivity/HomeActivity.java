@@ -35,6 +35,23 @@ public class HomeActivity extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.activity_home, container, false);
 
+        button_profile = view.findViewById(R.id.profile_button);
+        button_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+        button_setting = view.findViewById(R.id.setting_button);
+        button_setting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), SettingActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 }
