@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "64623651000",
+    "firebase_url": "https://feditor-6b664.firebaseio.com",
+    "project_id": "feditor-6b664",
+    "storage_bucket": "feditor-6b664.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64623651000:android:2ab04db415bd6449cf2c4d",
+        "android_client_info": {
+          "package_name": "com.faditor.master"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "64623651000-jvhekckure0kshcd1pif8c4i8bvier5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7TGEAuVRqSOhKor3rzgTzlsIM6U3lS6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "64623651000-jvhekckure0kshcd1pif8c4i8bvier5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
